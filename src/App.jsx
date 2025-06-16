@@ -29,18 +29,18 @@ function App() {
 
   return (
     <>
-      <h2>My Store</h2>
+      <h2 className="topHeading">My Store</h2>
       {isLoading && <p>Loading...</p>}
       {error && <p>{error}</p>}
 
-      <div>
+      <div className="neww">
         {data.map((data) => (
           <div key={data.id}>
-            <div>
+            <div className="bodyMain">
               <h5>{data.title}</h5>
               <p>{data.description}</p>
+              <img src={data.image} className="imgMain" />
             </div>
-            <img src={data.image} />
           </div>
         ))}
       </div>

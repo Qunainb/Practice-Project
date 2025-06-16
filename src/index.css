@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.topHeading {
+  text-align: center;
+  font-size: 2.5rem;
+  margin: 12px 0 15px 0;
+}
+.neww {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  min-height: 100vh;
+  gap: 30px;
+  padding: 10px;
+}
+.imgMain {
+  max-height: 150px;
+  object-fit: contain;
+  margin: 0 auto;
+}
+.bodyMain {
+  border: 1px solid black;
+  box-shadow: 1px 1px black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 16px;
+  height: 100%;
+}
+.bodyMain:hover {
+  border: 3px solid black;
+}
